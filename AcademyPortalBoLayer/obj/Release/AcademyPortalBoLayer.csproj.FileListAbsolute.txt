@@ -1,0 +1,6 @@
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBoLayer\bin\Release\AcademyPortalBoLayer.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBoLayer\bin\Release\AcademyPortalBoLayer.pdb
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBoLayer\obj\Release\AcademyPortalBoLayer.csprojAssemblyReference.cache
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBoLayer\obj\Release\AcademyPortalBoLayer.csproj.CoreCompileInputs.cache
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBoLayer\obj\Release\AcademyPortalBoLayer.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBoLayer\obj\Release\AcademyPortalBoLayer.pdb

@@ -1,0 +1,74 @@
+﻿@model AcademyPortalBoLayer.Help
+
+@{
+    ViewBag.Title = "RequestDetails";
+}
+
+
+<h1>@Html.Raw(@TempData["Msg"])</h1>
+
+<h2>RequestDetails</h2>
+
+<div>
+    <h4>Help</h4>
+    <hr />
+    @using (Html.BeginForm())
+    {
+
+        @Html.AntiForgeryToken()
+
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.RequestId)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.RequestId)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.userId)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.userId)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Issue)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Issue)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Discription)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Discription)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DateOfTicket)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DateOfTicket)
+            </dd>
+
+            <dt>
+                @Html.LabelFor(model => model.Resolution)
+            </dt>
+            <dd>
+                @Html.TextAreaFor(model => model.Resolution)
+            </dd>
+
+        </dl>
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Submit" class="btn btn-primary" /> |
+            @Html.ActionLink("Back to Dashboard", "Dashboard")
+        </div>
+    }
+</div>

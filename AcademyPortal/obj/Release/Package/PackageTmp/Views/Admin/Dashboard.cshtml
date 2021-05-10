@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Html.Raw(@TempData["Msg"])</h1>
+<main>
+    <div class="container-fluid">
+        <div class="db-breadcrumb">
+            <h4 class="breadcrumb-title">Dashboard</h4>
+        </div>
+        <!-- Card -->
+        <div class="row">
+            <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+                <div class="">
+                    <div> <a href='@Url.Action("SkillMapping", "Admin")' class="btn btn-primary btn-lg" style="width:250px;">Skill/Module Mapping</a></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+                <div class="">
+                    <div> <a href='@Url.Action("BatchRegistration", "Admin")' class="btn btn-primary btn-lg" style="width:250px;">Batch Registration</a></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+                <div class="">
+                    <div> <a href='@Url.Action("HelpRequest", "Admin")' class="btn btn-primary btn-lg" style="width:250px;">Help Request</a></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+                <div class="">
+                    <div> <a href='@Url.Action("BatchNomination", "Admin")' class="btn btn-primary btn-lg" style="width:250px;">Batch Nominations</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+            <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+                <div class="">
+                    <div> <a href='@Url.Action("FacultyRequest", "Admin")' class="btn btn-primary btn-lg" style="width:250px;">Faculty Request</a></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+                <div class="">
+                    <div> <a href='@Url.Action("ModuleRegistration", "Admin")' class="btn btn-primary btn-lg" style="width:250px;">Module Registration</a></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+                <div class="">
+                    <div> <a href='@Url.Action("SkillRegistration", "Admin")' class="btn btn-primary btn-lg" style="width:250px;">Skill Registration</a></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+                <div class="">
+                    <div> <a href='@Url.Action("EmployeeRequest", "Admin")' class="btn btn-primary btn-lg" style="width:250px;">Employee Request</a></div>
+                </div>
+            </div>
+        </div>
+</main>
+
+
+

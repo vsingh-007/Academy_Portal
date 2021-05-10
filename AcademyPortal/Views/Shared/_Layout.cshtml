@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDLqCiN8tc5lu3tg06wbjUFObE7dYy-kMAty4bJ5-RY5qc984rhX57FJJVuApABBc1jZQ&usqp=CAU"
+          type="image/x-icon">
+    <script src="~/js/contact.js"></script>
+    <script src="~/js/functions.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <link href="~/css/color/color-1.css" rel="stylesheet" />
+    <script src="~/js/jquery.scroller.js"></script>
+    <link href="~/css/shortcodes/accordion.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/alert.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/breadcrumb.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/button.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/divider.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/form.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/icon-box.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/layout.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/list.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/overlay.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/owl.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/pagination.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/pricingtable.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/separator.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/shortcodes.css" rel="stylesheet" />
+    <link href="~/css/shortcodes/widget.css" rel="stylesheet" />
+    <link href="~/css/assets.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/typography.css" rel="stylesheet" />
+    <link href="~/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/vendors/bootstrap/js/popper.min.js"></script>
+    <link href="~/vendors/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+    <script src="~/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="~/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+    <script src="~/vendors/counter/counterup.min.js"></script>
+    <script src="~/vendors/counter/waypoints-min.js"></script>
+    <link href="~/vendors/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/vendors/imagesloaded/imagesloaded.js"></script>
+    <link href="~/vendors/magnific-popup/magnific-popup.css" rel="stylesheet" />
+    <script src="~/vendors/magnific-popup/magnific-popup.js"></script>
+    <script src="~/vendors/masonry/filter.js"></script>
+    <script src="~/vendors/masonry/masonry.js"></script>
+    <link href="~/vendors/owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <script src="~/vendors/owl-carousel/owl.carousel.js"></script>
+    <link href="~/vendors/revolution/css/layers.css" rel="stylesheet" />
+    <link href="~/vendors/revolution/css/navigation.css" rel="stylesheet" />
+    <link href="~/vendors/revolution/css/settings.css" rel="stylesheet" />
+    <script src="~/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="~/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="~/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="~/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="~/vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="~/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="~/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="~/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="~/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="~/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <link href="~/vendors/scroll/scrollbar.css" rel="stylesheet" />
+    @*<link href="~/vendors/switcher/switcher.css" rel="stylesheet" />
+    <script src="~/vendors/switcher/switcher.js"></script>*@
+    <link href="~/vendors/themify/themify-icons.css" rel="stylesheet" />
+
+
+    <link href="~/admin/assets/css/color/color-1.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/accordion.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/alert.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/breadcrumb.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/button.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/divider.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/form.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/icon-box.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/layout.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/list.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/overlay.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/owl.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/pagination.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/pricingtable.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/separator.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/shortcodes.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/shortcodes/widget.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/assets.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/dashboard.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/style.css" rel="stylesheet" />
+    <link href="~/admin/assets/css/typography.css" rel="stylesheet" />
+
+    <script src="~/admin/assets/js/admin.js"></script>
+    <script src="~/admin/assets/js/functions.js"></script>
+    <script src="~/admin/assets/js/jquery.min.js"></script>
+    <link href="~/admin/assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="~/admin/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/admin/assets/vendors/bootstrap/js/popper.min.js"></script>
+    <link href="~/admin/assets/vendors/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+    <script src="~/admin/assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+
+
+    <script src="~/admin/assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+    <link href="~/admin/assets/vendors/calendar/fullcalendar.css" rel="stylesheet" />
+    <script src="~/admin/assets/vendors/calendar/fullcalendar.js"></script>
+    <script src="~/admin/assets/vendors/calendar/moment.min.js"></script>
+
+
+    <script src="~/admin/assets/vendors/chart/chart.min.js"></script>
+
+    <script src="~/admin/assets/vendors/counter/counterup.min.js"></script>
+    <script src="~/admin/assets/vendors/counter/waypoints-min.js"></script>
+    <link href="~/admin/assets/vendors/file-upload/imageuploadify.min.css" rel="stylesheet" />
+    <script src="~/admin/assets/vendors/file-upload/imageuploadify.min.js"></script>
+
+    <link href="~/admin/assets/vendors/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/admin/assets/vendors/imagesloaded/imagesloaded.js"></script>
+    <link href="~/admin/assets/vendors/magnific-popup/magnific-popup.css" rel="stylesheet" />
+    <script src="~/admin/assets/vendors/magnific-popup/magnific-popup.js"></script>
+    <script src="~/admin/assets/vendors/masonry/masonry.js"></script>
+    <script src="~/admin/assets/vendors/masonry/filter.js"></script>
+
+    <link href="~/admin/assets/vendors/owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <script src="~/admin/assets/vendors/owl-carousel/owl.carousel.js"></script>
+    <link href="~/admin/assets/vendors/scroll/scrollbar.css" rel="stylesheet" />
+    <script src="~/admin/assets/vendors/scroll/scrollbar.min.js"></script>
+    <link href="~/admin/assets/vendors/summernote/summernote.css" rel="stylesheet" />
+    <script src="~/admin/assets/vendors/summernote/summernote.js"></script>
+    @*<link href="~/admin/assets/vendors/switcher/switcher.css" rel="stylesheet" />
+    <script src="~/admin/assets/vendors/switcher/switcher.js"></script>*@
+    <link href="~/admin/assets/vendors/themify/themify-icons.css" rel="stylesheet" />
+
+</head>
+<!-- Header Top ==== -->
+<header class="header rs-nav">
+    <div class="top-bar">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="topbar-left">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i>Support@academyportal.com</a></li>
+                    </ul>
+                </div>
+                <div class="topbar-right">
+                    <ul>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li>@Html.ActionLink("Logout", "Logout", "Admin")</li>
+                        }
+                        else
+                        {
+                           // <li>@Html.ActionLink("Login", "Login", "Employee")</li>
+                            //<li>@Html.ActionLink("Sign Up", "Register", "Employee")</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sticky-header navbar-expand-lg">
+        <div class="menu-bar clearfix">
+            <div class="container clearfix">
+                <!-- Header Logo ==== -->
+                <div class="menu-logo">
+                    <a href="index.html"><img src="~/assets/images/MainLogo.jpeg" alt=""></a>
+                </div>
+                <!-- Mobile Nav Button ==== -->
+                <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!-- Author Nav ==== -->
+                <div class="secondary-menu">
+                    <div class="secondary-inner">
+                        <ul>
+                            <li><a href="https://www.facebook.com/" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://mail.google.com/" class="btn-link"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://www.linkedin.com/" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+                            <!-- Search Button ==== -->
+                            <li class="search-btn"><button id="quik-search-btn" type="button" class="btn-link"><i class="fa fa-search"></i></button></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Search Box ==== -->
+                <!-- Navigation Menu ==== -->
+                <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+                    <div class="menu-logo">
+                        <a href="#"><img src="assets/images/logo.png" alt=""></a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            @Html.ActionLink("Home", "Index", "Home")
+                        </li>
+                        <li>
+                            @Html.ActionLink("About", "About", "Home")
+                            
+                        </li>
+                                
+                        <li>
+                            @Html.ActionLink("Contact Us", "ContactUs", "Home")
+                        </li>
+                    </ul>
+                    <div class="nav-social-link">
+                        <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                        <a href="javascript:;"><i class="fa fa-google-plus"></i></a>
+                        <a href="javascript:;"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Navigation Menu END ==== -->
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header END ==== -->
+<body>
+    @*background-image: url(assets/images/background/bg1.jpg);*@
+    @*<div class="section-area section-sp2 bg-fix ovbl-dark" >*@
+    @*</div>*@
+    <div class="container" style="margin-top:50px;">
+        @RenderBody()
+    </div><div style="margin-bottom:100px"></div>
+</body>
+<!-- Footer ==== -->
+<footer>
+    <div class="footer-top">
+        <div class="pt-exebar">
+            <div class="container">
+                <div class="d-flex align-items-stretch">
+                    <div class="pt-logo mr-auto">
+                        <a href="#"><img src="~/assets/images/MainLogo.jpeg" alt="" /></a>
+                    </div>
+                    <div class="pt-social-link">
+                        <ul class="list-inline m-a0">
+                            <li><a href="https://www.facebook.com/" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://mail.google.com/" class="btn-link"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://www.linkedin.com/" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
+                    <div class="widget">
+                        <h5 class="footer-title">Sign Up For A Newsletter</h5>
+                        <p class="text-capitalize m-b20">Weekly Breaking news analysis and cutting edge advices on job searching.</p>
+                        <div class="subscribe-form m-b20">
+                            <form class="subscription-form" action="#" method="post">
+                                <div class="ajax-message"></div>
+                                <div class="input-group">
+                                    <input name="email" required="required" class="form-control" placeholder="Your Email Address" type="email">
+                                    <span class="input-group-btn">
+                                        <button name="submit" value="Submit" type="submit" class="btn"><i class="fa fa-arrow-right"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="col-12 col-lg-5 col-md-7 col-sm-12">
+                    <div class="row">
+                        <div class="col-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="widget footer_widget">
+                                <h5 class="footer-title">Company</h5>
+                                <ul>
+                                    <li class="active">
+                                        @Html.ActionLink("Home", "Index", "Home")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("About", "About", "Home")
+
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Contact Us", "ContactUs", "Home")
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="widget footer_widget">
+                                <h5 class="footer-title">Contact Us</h5>
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-map-marker"></i>
+                                        <span>Chennai, India</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope"></i>
+                                        <span>www.academyportal@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope"></i>
+                                        <span>www.oursupport.info@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone-square"></i>
+                                        <span>+91-9846576564, +91-9842542254 </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+                    <div class="widget widget_gallery gallery-grid-4">
+                        <h5 class="footer-title">Our Gallery</h5>
+                        <ul class="magnific-image">
+                            <li><a href="assets/images/gallery/pic1.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic1.jpg" alt=""></a></li>
+                            <li><a href="assets/images/gallery/pic2.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic2.jpg" alt=""></a></li>
+                            <li><a href="assets/images/gallery/pic3.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic3.jpg" alt=""></a></li>
+                            <li><a href="assets/images/gallery/pic4.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic4.jpg" alt=""></a></li>
+                            <li><a href="assets/images/gallery/pic5.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic5.jpg" alt=""></a></li>
+                            <li><a href="assets/images/gallery/pic6.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic6.jpg" alt=""></a></li>
+                            <li><a href="assets/images/gallery/pic7.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic7.jpg" alt=""></a></li>
+                            <li><a href="assets/images/gallery/pic8.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic8.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center"><a target="_blank" href="#">ACADEMY PORTAL</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer END ==== -->
+</html>

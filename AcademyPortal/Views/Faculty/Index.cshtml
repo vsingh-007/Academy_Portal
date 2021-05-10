@@ -1,0 +1,160 @@
+﻿@model IEnumerable<AcademyPortalBoLayer.Faculty>
+
+
+<h1>@Html.Raw(@TempData["Msg"])</h1>
+
+
+<main>
+    <div class="container-fluid">
+        <div class="db-breadcrumb">
+            <h4 class="breadcrumb-title">Dashboard</h4>
+        </div>
+        <!-- Card -->
+        <div class="row">
+            @*<div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+                <div class="">
+                    <div> <a href='@Url.Action("DeletedRecord", "Faculty")' class="btn btn-primary btn-lg">Deleted Record</a></div>
+                </div>
+            </div>*@
+            <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+                <div class="">
+                    <div><a href='@Url.Action("BatchRegistration", "Faculty")' class="btn btn-primary btn-lg" style="width:250px;">Batch Registration</a></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+                <div class="">
+                    <div> <a href='@Url.Action("Help", "Faculty")' class="btn btn-primary btn-lg" style="width:250px;">Help</a></div>
+                </div>
+            </div>
+        </div>
+       
+</main>
+
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dob)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserCatagory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.skillFamily)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecurityQuestion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecurityQueAnswer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModuleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Proficiency)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TeachingHours)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsDeleted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegistrationStatus)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.UserId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FirstName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.LastName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Dob)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.gender)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Contact)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Email)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Password)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.UserCatagory)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.skillFamily)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SecurityQuestion)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SecurityQueAnswer)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ModuleName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Proficiency)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TeachingHours)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.IsDeleted)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CreatedDate)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ModifiedDate)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.RegistrationStatus)
+    </td>
+    <td>
+        @Html.ActionLink("Delete", "Delete", new { id = item.UserId })
+    </td>
+</tr>
+}
+
+</table>*@

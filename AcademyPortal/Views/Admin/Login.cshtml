@@ -1,0 +1,75 @@
+﻿@model AcademyPortalBoLayer.Admin
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h1>@Html.Raw(@TempData["Msg"])</h1>
+
+
+<h2>Admin Login</h2><hr />
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    @if (TempData["status"] == "false")
+    {
+        <div class="alert alert-danger">
+            <strong>Login Failed!</strong> Invalid UserId and Password.
+        </div>
+    }
+    @if (TempData["exception"] == "true")
+    {
+        <div class="alert alert-warning">
+            <strong>Some Internal Error Occued !</strong> Sorry for inconvenience.
+        </div>
+    }
+    @if (TempData["msg"] == "success")
+    {
+        <div class="alert alert-success">
+            <strong>Password Reset Successfully </strong>
+        </div>
+    }
+    @if (TempData["msg"] == "failed")
+    {
+        <div class="alert alert-danger">
+            <strong>Password Reset Failed ! </strong>
+        </div>
+    }
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.UserId, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.UserId, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="d-sm-inline-flex">
+        <h6>@Html.ActionLink("Forgot User ID", "FindUserId", "Admin")  ,</h6>
+        <h6>@Html.ActionLink("Forgot Password", "VerifyDetails", "Admin") </h6>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Login" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    <h6>Don't Have Any Account !! Register @Html.ActionLink("Here", "Register") </h6>
+</div>

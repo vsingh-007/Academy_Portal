@@ -1,0 +1,97 @@
+﻿@model IEnumerable<AcademyPortalBoLayer.Batch>
+
+@{ ViewBag.Title = "AllBatchDetails"; }
+<link href="~/css/shortcodes/DropdownStyle.css" rel="stylesheet" />
+<link href="~/css/shortcodes/SearchStyle.css" rel="stylesheet" />
+
+<h3><i>Registered Batch Details</i></h3>
+<hr />
+
+@using (Html.BeginForm(new { @class = "search-form_3" }))
+{
+    <div class="d-flex justify-content-end">
+        <p>
+            <select class="wrapper-dropdown" id="SearchCriteria" name="SearchCriteria">
+                <option selected>Search By</option>
+                <option value="SkillId">Skill ID</option>
+                <option value="ModuleId">Module ID</option>
+                <option value="FacultyId">Faculty ID</option>
+                <option value="BatchId">Batch ID</option>
+            </select>
+
+            @Html.TextBox("Search_Data", ViewBag.FilterValue as string, new { @class = "search_3" })
+            <input type="submit" value="Find" formaction="AllBatchDetails" class="submit_3" />
+        </p>
+    </div>
+
+    <table class="table">
+        <tr style="background-color:#FFD622FF;">
+            <th>
+                @Html.DisplayName("Batch Id")
+            </th>
+
+            <th>
+                @Html.ActionLink("Skill Id", "Sorting", new { sortOrder = "SkillId", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                @Html.ActionLink("Module Id", "Sorting", new { sortOrder = "ModuleId", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                @Html.ActionLink("Technology", "Sorting", new { sortOrder = "Technology", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                @Html.ActionLink("Faculty Id", "Sorting", new { sortOrder = "FacultyId", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                @Html.ActionLink("Batch Start Date", "Sorting", new { sortOrder = "BatchStartDate", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                @Html.ActionLink("Batch End Date", "Sorting", new { sortOrder = "BatchEndDate", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                @Html.ActionLink("Batch Capacity", "Sorting", new { sortOrder = "BatchCapacity", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                @Html.ActionLink("Classroom Name", "Sorting", new { sortOrder = "ClassroomName", CurrentSort = ViewBag.CurrentSort })
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a href='@Url.Action("BatchDetails", "Employee",new { id=item.BatchId})'> @Html.DisplayFor(modelItem => item.BatchId)</a>
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.SkillId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModuleId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Technology)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FacultyId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BatchCapacity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClassroomName)
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+<div style="margin-top:15px;">
+    @Html.ActionLink("Back to Dashboard", "Index")
+</div>

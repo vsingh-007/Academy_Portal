@@ -1,0 +1,85 @@
+﻿@model IEnumerable<AcademyPortalBoLayer.Batch>
+
+@{
+    ViewBag.Title = "BatchRegistration";
+}
+
+<h3><i>Batch Registration</i></h3><hr />
+
+@if (TempData["status"] == "false")
+{
+    <div class="alert alert-info">
+        <strong>No Record Present !</strong>
+    </div>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SkillId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModuleId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Technology)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FacultyId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BatchCapacity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassroomName)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SkillId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModuleId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Technology)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FacultyId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BatchCapacity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClassroomName)
+                </td>
+                <td>
+                    <a href='@Url.Action("ApproveOrRejectBatch", "Faculty", new { id = item.BatchId, signal = 1 })' class="btn btn-primary">Accept</a>
+                    <a href='@Url.Action("ApproveOrRejectBatch", "Faculty", new { id = item.BatchId, signal = 0 })' class="btn btn-primary">Reject</a>
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+    <h2>@Html.Raw(@TempData["Msg"])</h2>
+    <div>
+        <h6>@Html.ActionLink("Back to Dashboard", "Index")</h6>
+    </div>

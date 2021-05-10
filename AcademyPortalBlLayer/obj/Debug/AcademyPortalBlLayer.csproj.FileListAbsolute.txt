@@ -1,0 +1,17 @@
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\obj\Debug\AcademyPortalBlLayer.csprojAssemblyReference.cache
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\obj\Debug\AcademyPortalBlLayer.csproj.CoreCompileInputs.cache
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Debug\AcademyPortalBlLayer.dll.config
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Debug\AcademyPortalBlLayer.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Debug\AcademyPortalBlLayer.pdb
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Debug\AcademyPortalBoLayer.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Debug\AcademyPortalDaLayer.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Debug\EntityFramework.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Debug\EntityFramework.SqlServer.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Debug\AcademyPortalBoLayer.pdb
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Debug\AcademyPortalDaLayer.pdb
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Debug\AcademyPortalDaLayer.dll.config
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Debug\EntityFramework.xml
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Debug\EntityFramework.SqlServer.xml
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\obj\Debug\AcademyPortalBlLayer.csproj.CopyComplete
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\obj\Debug\AcademyPortalBlLayer.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\obj\Debug\AcademyPortalBlLayer.pdb

@@ -1,0 +1,17 @@
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Release\AcademyPortalBlLayer.dll.config
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Release\AcademyPortalBlLayer.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Release\AcademyPortalBlLayer.pdb
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Release\AcademyPortalBoLayer.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Release\AcademyPortalDaLayer.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Release\EntityFramework.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Release\EntityFramework.SqlServer.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Release\AcademyPortalBoLayer.pdb
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Release\AcademyPortalDaLayer.pdb
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Release\AcademyPortalDaLayer.dll.config
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Release\EntityFramework.xml
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\bin\Release\EntityFramework.SqlServer.xml
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\obj\Release\AcademyPortalBlLayer.csprojAssemblyReference.cache
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\obj\Release\AcademyPortalBlLayer.csproj.CoreCompileInputs.cache
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\obj\Release\AcademyPortalBlLayer.csproj.CopyComplete
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\obj\Release\AcademyPortalBlLayer.dll
+F:\CTS-Training\Project\final project\academy_portal-master\AcademyPortalBlLayer\obj\Release\AcademyPortalBlLayer.pdb

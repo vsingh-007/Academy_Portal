@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "ELearning";
+}
+
+<h2><i>E-Learning</i></h2>
+<hr />
+
+<h3>Welcome to your E-Learning Dashboard</h3>
+
+
+<h3>@Html.Raw(@TempData["Msg"])</h3>
+
+<div style="margin-top:60px;">
+    @Html.ActionLink("Back to Dashboard", "Index")
+</div>

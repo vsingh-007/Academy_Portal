@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="jumbotron">
+    <h1>Welcome to Academy Portal</h1>
+    <p class="lead">Academy Portal is a web application designed for academia worldwide. The program helps university faculty to provide students with additional skills, giving them an advantage in the job market.</p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Admin</h2>
+        <p><a href='@Url.Action("Login", "Admin")' class="btn btn-primary btn-lg">Click Here &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Faculty</h2>
+        <p><a href='@Url.Action("Login", "Faculty")' class="btn btn-primary btn-lg">Click Here &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Associate/Employee</h2>
+        <p><a href='@Url.Action("Login", "Employee")' class="btn btn-primary btn-lg">Click Here &raquo;</a></p>
+    </div>
+</div>

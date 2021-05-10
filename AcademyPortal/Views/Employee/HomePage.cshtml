@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "HomePage";
+}
+
+<h2>Welcome To Academy Portal</h2>
+
+<h2>@Html.Raw(@TempData["Msg"])</h2>
+
+<div>
+    <h6>@Html.ActionLink("Back to Login", "Login")</h6>
+</div>

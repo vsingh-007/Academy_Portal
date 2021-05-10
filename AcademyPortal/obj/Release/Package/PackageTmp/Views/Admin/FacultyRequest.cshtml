@@ -1,0 +1,92 @@
+﻿@model IEnumerable<AcademyPortalBoLayer.Faculty>
+
+<h3><i>Faculty Request</i></h3>
+<hr />
+@if (TempData["status"] == "false")
+{
+    <div class="alert alert-info">
+        <strong>No Request Present !</strong>
+    </div>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dob)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.skillFamily)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModuleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Proficiency)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeachingHours)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dob)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contact)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.skillFamily)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModuleName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Proficiency)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TeachingHours)
+                </td>
+                <td>
+                    <a href='@Url.Action("ApproveOrRejectFaculty", "Admin", new { id = item.UserId, signal = 1 })' class="btn btn-success">Approve</a>
+                    <a href='@Url.Action("ApproveOrRejectFaculty", "Admin", new { id = item.UserId, signal = 0 })' class="btn btn-danger">Reject</a>
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+<div>
+    @Html.ActionLink("Back to DashBoard", "Dashboard")
+</div>

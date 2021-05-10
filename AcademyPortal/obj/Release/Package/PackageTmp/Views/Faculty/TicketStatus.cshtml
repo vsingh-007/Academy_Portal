@@ -1,0 +1,71 @@
+﻿@model IEnumerable<AcademyPortalBoLayer.Help>
+
+@{
+    ViewBag.Title = "TicketStatus";
+}
+
+<h3><i>Ticket Status</i></h3>
+<hr />
+
+<p>
+    @Html.ActionLink("Raise a New Ticket", "HelpFaculty")
+</p>
+@if (TempData["status"] == "false")
+{
+    <div class="alert alert-info">
+        <strong>No Request Present !</strong>
+    </div>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Issue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Discription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfTicket)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Resolution)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RequestId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Issue)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Discription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfTicket)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Resolution)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+<div>
+    <h6>@Html.ActionLink("Back", "Help")</h6>
+</div>

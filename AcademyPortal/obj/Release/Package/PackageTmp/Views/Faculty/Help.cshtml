@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Help";
+}
+
+<h1>@Html.Raw(@TempData["Msg"])</h1>
+
+<h3><i>24x7 HelpDesk</i></h3><hr />
+
+<a href='@Url.Action("HelpFaculty", "Faculty")' class="btn btn-primary btn-lg">Raise a Ticket</a>
+
+<a href='@Url.Action("TicketStatus", "Faculty")' class="btn btn-primary btn-lg">Ticket Status</a>
+
+<div style="margin-top:20px"> 
+    <h6>@Html.ActionLink("Back to Dashboard", "Index")</h6>
+</div>

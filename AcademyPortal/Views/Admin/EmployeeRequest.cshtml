@@ -1,0 +1,72 @@
+﻿@model IEnumerable<AcademyPortalBoLayer.Employee>
+
+@{
+    ViewBag.Title = "EmployeeRequest";
+}
+
+<h3><i>Employee Request</i></h3>
+<hr />
+@if (TempData["status"] == "false")
+{
+    <div class="alert alert-info">
+        <strong>No Request Present !</strong>
+    </div>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.First_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Last_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.First_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Last_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DOB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contact)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    <a href='@Url.Action("ApproveOrRejectEmployee", "Admin", new { id = item.UserId, signal = 1 })' class="btn btn-success">Approve</a>
+                    <a href='@Url.Action("ApproveOrRejectEmployee", "Admin", new { id = item.UserId, signal = 0 })' class="btn btn-danger">Reject</a>
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+<div>
+    @Html.ActionLink("Back to DashBoard", "Dashboard")
+</div>

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<AcademyPortalBoLayer.Help>
+
+@{
+    ViewBag.Title = "HelpRequest";
+}
+
+<h1>@Html.Raw(@TempData["Msg"])</h1>
+
+<h3><i>Help Request</i></h3><hr />
+
+@if (TempData["status"] == "false")
+{
+    <div class="alert alert-info">
+        <strong>No Request Present !</strong>
+    </div>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Issue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Discription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfTicket)
+            </th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a href='@Url.Action("RequestDetails", "Admin",new { id=item.RequestId})'> @Html.DisplayFor(modelItem => item.RequestId)</a>
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Issue)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Discription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfTicket)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+}
+<div>
+    @Html.ActionLink("Back to Dashboard", "Dashboard")
+</div>

@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "HomePage";
+}
+
+
+<h2>Welcome to Homepage</h2>
+
+<h1>@Html.Raw(@TempData["Msg"])</h1>
+
+<div>
+    <h6>@Html.ActionLink("Back to Login", "Login")</h6>
+</div>
+
+
+
